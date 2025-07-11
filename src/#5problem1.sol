@@ -17,7 +17,7 @@ contract ProblemOne {
    }
 
    uint256 public constant CURVEORDER = 21888242871839275222246405745257275088696311157297823662689037894645226208583;
-   
+
 
    ECpoint public G = ECpoint(1, 2);
 
@@ -47,7 +47,7 @@ contract ProblemOne {
     (uint Gx, uint Gy) = scalarMultiply((G.x),(G.y), target_scalar);
 
 
-
+    //Here we check if the result of the EC addition is equal to the scalar multiplication of the generator with the target scalar
     if (Cx == Gx && Cy == Gy) {
 
         return true;

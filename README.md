@@ -1,66 +1,22 @@
-## Foundry
+Rareskills Homework #5
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
-Foundry consists of:
+## Problem 1: Rational numbers
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+We’re going to do zero knowledge addition again.
 
-## Documentation
+Claim: “I know two rational numbers that add up to num/den”
 
-https://book.getfoundry.sh/
+Proof: ([A], [B], num, den)
 
-## Usage
 
-### Build
 
-```shell
-$ forge build
-```
 
-### Test
 
-```shell
-$ forge test
-```
 
-### Format
 
-```shell
-$ forge fmt
-```
+## Problem 2: Matrix Multiplication
 
-### Gas Snapshots
+There is no claim statement here, just execute the math on chain.
 
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+Your contract should implement matrix multiplication of an n x n matrix (**M**) of uint256 and a n x 1 vector of points (**s**). It validates the claim that matrix **Ms = o** where o is a n x 1 matrix of uint256.
